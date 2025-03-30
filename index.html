@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Indecent</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <!-- Header section with navigation, language selector, and social media links -->
+    <header>    
+            <nav>
+                <ul>
+                    <li><a href="#accueil" id="nav-accueil">Accueil</a></li>
+                    <li><a href="#collection" id="nav-collection">Collection</a></li>
+                    <li><a href="#about" id="nav-about">À propos</a></li>
+                    <li><a href="#contact" id="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                    <span class="flag" onclick="changeLanguage('fr')">🇫🇷</span>
+                    <span class="flag" onclick="changeLanguage('en')">🇬🇧</span>
+                    <span class="flag" onclick="changeLanguage('pl')">🇵🇱</span>
+            </div>
+            <div class="social-icons">
+                    <a href="https://www.facebook.com/indecentporsche" target="_blank">
+                        <img src="images/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/the.indecent/" target="_blank">
+                        <img src="images/instagram.png" alt="Instagram">
+                    </a>
+            </div>
+                
+    </header>
+        
+
+    <!-- Home section with logo and slogan -->
+    <section id="accueil" class="section accueil">
+        <div class="logo-container">
+            <img src="images/logo2.svg" alt="Indecent Logo">
+        </div>
+        <div class="accueil-texte">
+            <p>Being vulgar is easy. Stay classy. Just a bit INDECENT.</p>
+        </div>
+    </section>
+    
+
+    <!-- Collection section with car models in a carousel -->
+    <section id="collection" class="section collection">
+        <h2>Collection</h2>
+    
+        <div class="carousel">
+            <button class="prev-btn">&#10094;</button> <!-- Left arrow button -->
+            
+            <div class="carousel-container">
+                <!-- Each car model with specifications -->
+                <div class="car-card" id="car-1">
+                        <img src="images/001.png" alt="Porsche 911" class="car-image" data-car="001">
+                        <div class="car2-card2">
+                            <h3 id="car-1-title">Indecent 001</h3>
+                            <p id="car-1-power"><strong>Power:</strong> 391 HP</p>
+                            <p id="car-1-torque"><strong>Torque:</strong> 420 Nm</p>
+                            <p id="car-1-wheels"><strong>Wheels:</strong> Rotiform FUC</p>
+                            <p id="car-1-suspension"><strong>Suspension:</strong> SHOW</p>
+                            <p id="car-1-option"><strong>Option:</strong> Ducktail (optional)</p>
+                            <p id="car-1-release" class="date">Release: July 2022</p>
+                        </div>
+                    </div>
+                
+                    <div class="car-card" id="car-2">
+                        <img src="images/002.png" alt="Porsche Cayman" class="car-image" data-car="002">
+                        <div class="car2-card2">
+                            <h3 id="car-2-title">Indecent 002</h3>
+                            <p id="car-2-power"><strong>Power:</strong> 500 HP</p>
+                            <p id="car-2-torque"><strong>Torque:</strong> 620 Nm</p>
+                            <p id="car-2-wheels"><strong>Wheels:</strong> Rotiform USF</p>
+                            <p id="car-2-suspension"><strong>Suspension:</strong> STREET</p>
+                            <p id="car-2-option"><strong>Option:</strong> Spoiler (optional)</p>
+                            <p id="car-2-release" class="date">Release: November 2022</p>
+                        </div>
+                    </div>
+                
+                    <div class="car-card" id="car-3">
+                        <img src="images/003.png" alt="Porsche Turbo" class="car-image" data-car="003">
+                        <div class="car2-card2">
+                            <h3 id="car-3-title">Indecent 003</h3>
+                            <p id="car-3-power"><strong>Power:</strong> 391 HP</p>
+                            <p id="car-3-torque"><strong>Torque:</strong> 420 Nm</p>
+                            <p id="car-3-wheels"><strong>Wheels:</strong> Rotiform FUC</p>
+                            <p id="car-3-suspension"><strong>Suspension:</strong> SHOW</p>
+                            <p id="car-3-option"><strong>Option:</strong> Spoiler (optional)</p>
+                            <p id="car-3-release" class="date">Release: June 2023</p>
+                        </div>
+                    </div>
+                
+                    <div class="car-card" id="car-4">
+                        <img src="images/004.png" alt="Porsche Taycan" class="car-image" data-car="004">
+                        <div class="car2-card2">
+                            <h3 id="car-4-title">Indecent 004</h3>
+                            <p id="car-4-power"><strong>Power:</strong> 500 HP</p>
+                            <p id="car-4-torque"><strong>Torque:</strong> 620 Nm</p>
+                            <p id="car-4-wheels"><strong>Wheels:</strong> Rotiform USF</p>
+                            <p id="car-4-suspension"><strong>Suspension:</strong> SHOW</p>
+                            <p id="car-4-option"><strong>Option:</strong> Spoiler (optional)</p>
+                            <p id="car-4-release" class="date">Release: May 2024</p>
+                        </div>
+                    </div>
+                
+                    <div class="car-card" id="car-5">
+                        <img src="images/005.png" alt="Porsche GT3" class="car-image" data-car="005">
+                        <div class="car2-card2">
+                            <h3 id="car-5-title">Indecent 005</h3>
+                            <p id="car-5-power"><strong>Power:</strong> 400 HP</p>
+                            <p id="car-5-torque"><strong>Torque:</strong> 440 Nm</p>
+                            <p id="car-5-wheels"><strong>Wheels:</strong> Rotiform USF</p>
+                            <p id="car-5-suspension"><strong>Suspension:</strong> RACE</p>
+                            <p id="car-5-option"><strong>Option:</strong> Spoiler (optional)</p>
+                            <p id="car-5-release" class="date">Release: April 2024</p>
+                        </div>
+                    </div>
+                </div>
+                
+    
+            <button class="next-btn">&#10095;</button> <!-- Right arrow button -->
+        </div>
+    </section>
+    
+    
+    <!-- Modal for enlarged car images -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Expanded Car Image">
+            <div class="additional-images" id="additionalImages">
+                <!-- Additional images loaded dynamically with JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Supported vehicles section -->
+    <section class="supported-vehicles">
+            <h3>Currently Supported Vehicles</h3>
+            <ul>
+                <li><span class="vehicle-year">2005-2012</span>: (997.1 and 997.2) Porsche 911 Coupe, Cabriolet</li>
+                <li><span class="vehicle-year">2012-2019</span>: (991.1 and 991.2) Porsche 911 Coupe</li>
+            </ul>
+    </section>
+        
+        
+    <!-- About section -->
+    <section id="about" class="about">
+            <h2>À Propos de nous</h2>
+            <p>Indecent was created to reinvigorate Porsche enthusiasts by offering a full-service transformation of water-cooled 911’s.</p>
+            
+            <p>Designed with intentions to push the limit of Porsche's original shape and lines while maintaining its beauty and aesthetics. The vision of modernizing the beloved Porsche 911 is the ultimate goal.</p>
+            
+            <p>Produced in Poland, the Indecent design is brought to life by generational handcrafted artisans along with modern advanced technology. The work involved to create an indecent vehicle requires replacement, bonding and molding of every body panel with the exception of the hood, roof and doors. Extra attention is paid to ensure a quality OEM finish.</p>
+            
+            <p>Creating an Indecent 911 takes the owner through a special journey: design process, option specifications, vehicle transportation/sourcing, construction process, and finalized by a unique serial number.</p>
+    </section>
+        
+    <!-- Contact section with different regional contacts -->
+    <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Please reach out to one of our official builders if you'd like to start the process of your very own Indecent 911!</p>
+        
+            <div class="contact-container">
+                <div class="contact-item">
+                    <p>🇵🇱</p>
+                    <h3>Indecent Poland HQ</h3>
+                    <p><strong>Sebastian Polit</strong></p>
+                    <p>Email: <a href="mailto:europe@indecent911.com">europe@indecent911.com</a></p>
+                    <p>Phone: +48 603 635 106</p>
+                </div>
+        
+                <div class="contact-item">
+                    <p>🇺🇸</p>
+                    <h3>Indecent North America HQ</h3>
+                    <p><strong>Phillip Tieu</strong></p>
+                    <p>Email: <a href="mailto:pt@tieuinds.com">pt@tieuinds.com</a></p>
+                    <p>Phone: +1 (832) 867-8701</p>
+                </div>
+        
+                <div class="contact-item">
+                    <p>🇬🇧</p>
+                    <h3>Indecent UK</h3>
+                    <p><strong>Colourkraft</strong></p>
+                    <p>Email: <a href="mailto:info@colourkraft.net">info@colourkraft.net</a></p>
+                    <p>Phone: +44 7500 924 407</p>
+                </div>
+        
+                <div class="contact-item">
+                    <p>🇮🇹</p>
+                    <h3>Indecent Italy</h3>
+                    <p><strong>BTS Creativity</strong></p>
+                    <p>Email: <a href="mailto:info@btscreativity.it">info@btscreativity.it</a></p>
+                    <p>Phone: +39 3389 344 216</p>
+                </div>
+        
+                <div class="contact-item">
+                    <p>🇧🇭</p>
+                    <h3>Indecent Bahrain</h3>
+                    <p><strong>SMS Design & Performance</strong></p>
+                    <p>Email: <a href="mailto:sms.zaher@gmail.com">sms.zaher@gmail.com</a></p>
+                    <p>Phone: +(973) 1712 5171</p>
+                </div>
+        
+                <div class="contact-item">
+                    <p>🇩🇪/🇦🇹/🇨🇭</p>
+                    <h3>Indecent Germany / Austria / Switzerland</h3>
+                    <p><strong>Sebastian Bader</strong></p>
+                    <p>Email: <a href="mailto:info@widebodykit.de">info@widebodykit.de</a></p>
+                    <p>Phone: +49 173/6419254</p>
+                </div>
+        
+                <div class="contact-item">
+                    <p>🇭🇰</p>
+                    <h3>Indecent Hong Kong</h3>
+                    <p><strong>ReinART.Design</strong></p>
+                    <p>Email: <a href="mailto:info@reinartdesign.com">info@reinartdesign.com</a></p>
+                    <p>Phone: +852 3159 6800</p>
+                </div>
+        
+                <div class="contact-item">
+                    <p>🇿🇦</p>
+                    <h3>Indecent South Africa</h3>
+                    <p><strong>MTown Customs</strong></p>
+                    <p>Email: <a href="mailto:info@mtowncustoms.com">info@mtowncustoms.com</a></p>
+                    <p>Phone: +27(0)76 755 6708</p>
+                </div>
+        
+                <div class="contact-item">
+                    <p>🇰🇷</p>
+                    <h3>Indecent South Korea</h3>
+                    <p><strong>Peaches. One Universe</strong></p>
+                    <p>Email: <a href="mailto:vector@peachesoneuniverse.com">vector@peachesoneuniverse.com</a></p>
+                    <p>Phone: +82 10 4933 7718</p>
+                </div>
+        
+                <div class="contact-item">
+                    <p>🇳🇱</p>
+                    <h3>Indecent Netherlands</h3>
+                    <p><strong>Kraaijvanger Bespoke Automotive</strong></p>
+                    <p>Email: <a href="mailto:ubenkraaijvanger@outlook.com">ubenkraaijvanger@outlook.com</a></p>
+                    <p>Phone: +31 6 55958505</p>
+                </div>
+        
+                <div class="contact-item">
+                    <p>🇷🇴</p>
+                    <h3>Indecent Romania</h3>
+                    <p><strong>Racebox</strong></p>
+                    <p>Email: <a href="mailto:contact@racebox.ro">contact@racebox.ro</a></p>
+                    <p>Phone: +40 799 299 969</p>
+                </div>
+        
+                <div class="contact-item">
+                    <p>🇵🇭</p>
+                    <h3>Indecent Philippines</h3>
+                    <p><strong>Fitment Engineering</strong></p>
+                    <p>Email: <a href="mailto:kyleerald@gmail.com">kyleerald@gmail.com</a></p>
+                    <p>Phone: +63 906 560 7651</p>
+                </div>
+            </div>
+    </section>
+        
+
+    <!-- Footer with copyright information -->
+    <footer>
+        <p>&copy; 2025 Indecent | Manufacturer of Porsche 911 997 widebody kit.</p>
+    </footer>
+</body>
+</html>
